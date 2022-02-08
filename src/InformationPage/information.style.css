@@ -1,0 +1,14 @@
+.info-menus-wrapper {
+    row-gap: 42.5vh;
+}
+
+.info-bottomright-menu {
+    flex-direction: column;
+    margin: 2.5rem;
+    row-gap: 10vh;
+}
+
+.info-bottomright-menu img {
+    width: 10rem;
+}
+

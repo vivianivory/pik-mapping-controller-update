@@ -1,8 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
+import 'animate.css';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+declare global {
+  interface Window {
+    MP_SDK: any;
+  }
+}
 
 ReactDOM.render(
   <React.StrictMode>

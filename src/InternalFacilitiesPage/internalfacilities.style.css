@@ -1,0 +1,21 @@
+.internal-menu {
+    width: 20vw;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.internal-links-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 20vh;
+}
+
+.internal-link {
+    opacity: 0;
+    height: 5rem;
+    width: 100%;
+}

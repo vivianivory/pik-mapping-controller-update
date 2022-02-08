@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+html, body, div#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a, a:hover {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homebtn-icon {
+  width: 7.5vh;
+  height: 7.5vh;
+  opacity: 0.95;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homebtn-icon button {
+  mask: url(../src/assets/misc/homebtnwhite.png) center/contain no-repeat;
+  width: 8vh;
+  height: 8vh;
+}
+
+.homebtn-icon:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+}
+
+.leftrightbtn-wrapper {
+  display: flex;
+  column-gap: 0.5rem;
+  margin: 1rem;
+}
+
+.left-icon, .right-icon {
+  width: 5vh;
+  height: 5vh;
+  opacity: 0.95;
+}
+
+.left-icon:hover, .right-icon:hover, .back-icon:hover, .next-icon:hover {
+  opacity: 1;
+  transform: scale(1.05, 1.05);
+}
+
+.fullpage-image-wrapper {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.fullpage-image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.page-contents {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+/* MENUS */
+.topbottom-menu-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.top-menu, .bottom-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.topright-menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.bottom-menu {
+  height: 100%;
+  align-items: flex-end;
+}
+
+.bottomright-menu {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.homebtn-wrapper {
+  margin: 1rem;
 }

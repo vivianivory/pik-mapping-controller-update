@@ -1,0 +1,21 @@
+.map-menu {
+    display: flex;
+    /* width: 100%; */
+    position: absolute;
+    width: 18.5vw;
+    height: 10vh;
+    border: .15rem solid black;
+    right: 15vw;
+    top: 13vh;
+    border-radius: 10px;
+}
+
+.information-link {
+    width: 100% !important;
+    color: white !important;
+}
+
+.information-link-space {
+    width: 50vh !important;
+    height: 30vh !important;
+}

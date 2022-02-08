@@ -1,0 +1,25 @@
+.nav-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    column-gap: .5rem;
+}
+
+.nav-wrapper button {
+    padding: 0;
+    border-radius: 25px;
+    color: white;
+}
+
+.nav-wrapper img, .nav-wrapper a, .nav-wrapper .ripple {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+}
+
+.disabled-nav {
+    filter: grayscale(100%);
+}

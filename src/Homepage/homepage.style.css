@@ -1,0 +1,48 @@
+/* .homepage-hexagon {
+    height: 25vh !important;
+    width: 25vh !important;
+    opacity: 0;
+}
+
+.homepage-menus-first-row, .homepage-menus-second-row {
+    display: flex;
+    justify-content: flex-end;
+    transform: rotate(30deg) translateX(5vh) translateY(2.5vh);
+    column-gap: 2.5vh;
+} */
+
+.homepage-content {
+    width: 95vw;
+}
+
+.homepage-menus-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10vw;
+}
+
+.homepage-menus-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-column {
+    transform: translateY(-12.5vh);
+}
+
+.third-column {
+    transform: translateY(12.5vh);
+}
+
+.homepage-menu-bullet, .homepage-menu-bullet img {
+    width: 25vh;
+}
+
+.homepage-buttons {
+    mask: url(../assets/homepagemenus/map.png) center/contain no-repeat;
+    width: 25vh;
+    color: white !important;
+}
