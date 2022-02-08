@@ -251,3 +251,6 @@ $RECYCLE.BIN/
 
 # Matterport
 bundle
+
+# Videos
+src/assets/videos
