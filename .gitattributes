@@ -1,5 +1,0 @@
-src/assets/videos filter=lfs diff=lfs merge=lfs -text
-*.mp4
-src/assets/videos/animation.mp4 filter=lfs diff=lfs merge=lfs -text
-src/assets/videos/studio.mp4 filter=lfs diff=lfs merge=lfs -text
-src/assets/videos/twobr.mp4 filter=lfs diff=lfs merge=lfs -text
