@@ -253,4 +253,4 @@ $RECYCLE.BIN/
 bundle
 
 # Videos
-*.mp4
+src/assets/videos
