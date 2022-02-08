@@ -1,6 +1,6 @@
 # After cloning
-npm install
-npm run build
+npm install <br />
+npm run build <br />
 npm install -g serve
 
 ## Video files
