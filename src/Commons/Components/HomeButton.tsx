@@ -4,7 +4,7 @@ import React, { Component, ReactNode } from "react";
 import homebtnwhite from '../../assets/misc/homebtnwhite.png';
 
 interface IProps {
-
+    redirectUrl?: string;
 }
 
 interface IState {
@@ -12,21 +12,22 @@ interface IState {
 }
 
 class HomeButton extends Component <IProps, IState> {
-    constructor(props: IProps) {
-        super(props)
-    }
 
-    private goHome() {
+    private goHome(href?: string) {
         setTimeout(() => {
-            window.location.assign(`/`)
+            if(href) {
+                window.location.assign(`${href}`)
+            } else {
+                window.location.assign(`/`)
+            }
         }, 500);
     }
 
     render(): ReactNode {
         return (
             <div className='homebtn-icon'>
-                <Button onClick={() => this.goHome()}>
-                        <img src={homebtnwhite} />
+                <Button onClick={() => this.goHome(this.props.redirectUrl)}>
+                        <img alt='home-button' src={homebtnwhite} />
                 </Button>
             </div>
         )

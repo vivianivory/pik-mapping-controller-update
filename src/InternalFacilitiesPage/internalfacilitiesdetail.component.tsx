@@ -6,10 +6,7 @@ import clubhouse from '../assets/pik2fullpage/pikfit.png';
 import fargallery from '../assets/pik2fullpage/galleryjauh.png';
 import neargallery from '../assets/pik2fullpage/gallerydekat.png';
 
-import closebtn from '../assets/misc/closebtn.png';
-
 import './internalfacilities.style.css';
-import LeftRightButton from '../Commons/Components/LeftRightButton';
 import NavigationButtons from '../Commons/Components/NavigationButtons/navigationbuttons.component';
 
 interface IPathParams {
@@ -45,9 +42,9 @@ class InternalFacilitiesDetail extends Component<IProps, IState> {
 
     render(): React.ReactNode {
         return (
-            <div className="page-wrapper internal-detail animate__animated animate__fadeIn">
+            <div className="page-wrapper internal-detail">
                 <div className="fullpage-image-wrapper internalfacilities-detail">
-                    <img className="fullpage-image" src={this.state.internalDetailImg} />
+                    <img alt='internal' className="fullpage-image animate__animated animate__fadeIn" src={this.state.internalDetailImg} />
                 </div>
                 <div className="page-contents">
                     {/* <div className='top-menu internal-detail-top-menu'>

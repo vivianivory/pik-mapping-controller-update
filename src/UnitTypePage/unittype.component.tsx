@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import { Switch, Route, withRouter, RouteComponentProps } from 'react-router-dom';
 
-import { Square } from '@mui/icons-material';
-
 import unittypefullimg from '../assets/pik2fullpage/promoff.png';
 
-import twobrbtn from '../assets/misc/2brbtnimg.png';
-import studiobtn from '../assets/misc/studiobtnimg.png';
-import video2brbtnimg from '../assets/misc/video2brbtnimg.png';
-import videostudiobtnimg from '../assets/misc/videostudiobtnimg.png';
-
-import HomeButton from '../Commons/Components/HomeButton';
+import twobrbtn from '../assets/misc/unittype/2brbg.png';
+import studiobtn from '../assets/misc/unittype/studiobg.png';
+import twobrcropped from '../assets/misc/unittype/2brcropped.png';
+import studiobtncropped from '../assets/misc/unittype/studiocropped.png';
+import video2brbtnimg from '../assets/misc/unittype/video2brbtnimg.png';
+import videostudiobtnimg from '../assets/misc/unittype/videostudiobtnimg.png';
+import videotext from '../assets/misc/unittype/videotext.png';
 
 import UnitTypeDetails from './unittypedetails.component';
 import UnitTypePhoto from './unittypephoto.component';
@@ -48,50 +47,53 @@ class UnitType extends Component<IProps, IState> {
         <Route exact path={unittypepath}> 
           <div className="page-wrapper unittype unittype-main animate__animated animate__fadeIn">
               <div className="fullpage-image-wrapper unittype">
-                <img className="fullpage-image" src={unittypefullimg} />
+                <img alt='unit type' className="fullpage-image" src={unittypefullimg} />
               </div>
               <div className="page-contents">
-                <div className='top-menu'>
-                    <div className="topleft-menu">
+                <div className='top-menu unittype-gap'>
+                    {/* <div className="topleft-menu ">
                         <HomeButton/>
-                    </div>
+                    </div> */}
                 </div>
                 <div className='middle-menu unittype-menus'>
                   <div className='unittype-links-wrapper studio-links-wrapper'>
                     <Button className="unittype-buttons main-buttons" onClick={() => this.loadPage(`${unittypepath}/details/studio`)}>
                       <div className="unittype-menu">
-                        <img src={studiobtn} />
+                        <img alt='studio' src={studiobtn} />
                       </div>
-                    </Button>
-                    <Button className="unittype-buttons unittype-video-buttons" onClick={() => this.loadPage(`${unittypepath}/video/studio`)}>
-                      <div className="unittype-menu">
-                        <img src={videostudiobtnimg} />
+                      <img className='cropped-img' alt='studio-cropped' src={studiobtncropped} />
+                      <div className='border-studio'>
+                        <div className='cropped-img-border'/>
                       </div>
+                      
                     </Button>
-                    {/* <a className='details-link' href={`${unittypepath}/details/studio`}>
-                      <Square className="studio-link-space" />
-                    </a>
-                    <a className='virtualtour-link' href={`${unittypepath}/virtualtour/studio`}>
-                      <Square className="studiovt-link-space" />
-                    </a> */}
+                    <div className="unittype-buttons unittype-video-buttons">
+                      <div className="unittype-menu video-button">
+                        <img alt='studio video' src={videostudiobtnimg} />
+                      </div>
+                      <Button className="studio-video-button-cropped" id='logo' onClick={() => this.loadPage(`${unittypepath}/video/studio`)}> 
+                        <img className="video-text" alt='video-text' src={videotext} />
+                      </Button>
+                    </div>
                   </div>
                   <div className='unittype-links-wrapper 2br-links-wrapper'>
                     <Button className="unittype-buttons main-buttons" onClick={() => this.loadPage(`${unittypepath}/details/2br`)}>
                       <div className="unittype-menu">
-                        <img src={twobrbtn} />
+                        <img alt='two bedroom' src={twobrbtn} />
+                      </div>
+                      <img className='cropped-img' alt='studio-cropped' src={twobrcropped} />
+                      <div className='border-2br'>
+                        <div className='cropped-img-border'/>
                       </div>
                     </Button>
-                    <Button className="unittype-buttons unittype-video-buttons" onClick={() => this.loadPage(`${unittypepath}/video/2br`)}>
-                      <div className="unittype-menu">
-                        <img src={video2brbtnimg} />
+                    <div className="unittype-buttons unittype-video-buttons" >
+                      <div className="unittype-menu video-button">
+                        <img alt='two bedroom video' src={video2brbtnimg} />
                       </div>
-                    </Button>
-                    {/* <a className='details-link' href={`${unittypepath}/details/2br`}>
-                      <Square className="2br-link-space" />
-                    </a>
-                    <a className='virtualtour-link' href={`${unittypepath}/virtualtour/2br`}>
-                      <Square className="2brvt-link-space" />
-                    </a> */}
+                      <Button className="twobr-video-button-cropped" id='logo' onClick={() => this.loadPage(`${unittypepath}/video/2br`)}>
+                        <img className="video-text" alt='video-text' src={videotext} />
+                      </Button>
+                    </div>
                   </div>
                 </div>
                 <NavigationButtons disableLeftButton disableExitButton disableRightButton />

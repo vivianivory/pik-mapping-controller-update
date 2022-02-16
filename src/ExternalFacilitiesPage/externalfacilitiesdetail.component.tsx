@@ -76,9 +76,9 @@ class ExternalFacilitiesDetail extends Component<IProps, IState> {
 
     render(): React.ReactNode {
         return (
-            <div className="page-wrapper external-detail animate__animated animate__fadeIn">
+            <div className="page-wrapper external-detail">
                 <div className="fullpage-image-wrapper externalfacilities-detail">
-                    <img className="fullpage-image" src={this.state.externalDetailImg} />
+                    <img alt='external detail' className="fullpage-image animate__animated animate__fadeIn" src={this.state.externalDetailImg} />
                 </div>
                 <div className="page-contents">
                     <NavigationButtons 

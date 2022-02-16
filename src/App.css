@@ -102,3 +102,217 @@ a, a:hover {
 .homebtn-wrapper {
   margin: 1rem;
 }
+
+/* Shining Effect */
+
+#logo {
+  overflow: hidden;
+}
+#logo img,
+#logo button {
+  width: 100%;
+}
+#logo:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  width: 75%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  transform: skewX(-30deg);
+  animation-name: slide;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction:normal;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.35) 77%,
+    rgba(255, 255, 255, 0.75) 92%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+@keyframes slide {
+  0% {
+    left: -50vw;
+    top: 0;
+  }
+  /* 50% {
+    left: 50%;
+    top: 0;
+  } */
+  100% {
+    left: 150vw;
+    top: 0;
+  }
+}
+
+/* SLOWER LOGO */
+
+#logo-slower {
+  overflow: hidden;
+}
+#logo-slower img,
+#logo-slower button {
+  width: 100%;
+}
+#logo-slower:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  width: 75%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.75);
+  transform: skewX(-30deg);
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction:normal;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(255, 255, 255, 0.35) 77%,
+    rgba(255, 255, 255, 0.75) 92%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+@keyframes slide {
+  0% {
+    left: -50vw;
+    top: 0;
+  }
+  /* 50% {
+    left: 50%;
+    top: 0;
+  } */
+  100% {
+    left: 75vw;
+    top: 0;
+  }
+}
+
+/* softer LOGO */
+
+#logo-softer {
+  overflow: hidden;
+}
+#logo-softer img,
+#logo-softer button {
+  width: 100%;
+}
+#logo-softer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50vw;
+  width: 75%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(-30deg);
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction:normal;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.15) 77%,
+    rgba(255, 255, 255, 0.5) 92%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+@keyframes slide {
+  0% {
+    left: -50vw;
+    top: 0;
+  }
+  /* 50% {
+    left: 50%;
+    top: 0;
+  } */
+  100% {
+    left: 75vw;
+    top: 0;
+  }
+}
+/* DROP SHADOW */
+
+.shadow {
+  --stroke-pos: 4px;
+  --stroke-neg: -4px;
+  --stroke-color: rgb(193, 255, 78);
+  --stroke-color2: rgb(166, 255, 173);
+
+  filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color)) 
+    drop-shadow(var(--stroke-neg) 0 var(--stroke-color2))
+    drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color2));
+    /* drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color)) 
+    drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color2))
+    drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color2));    */
+
+  animation: rotate 1s infinite alternate-reverse;
+}
+
+@keyframes rotate {
+  0% {
+    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color2)) 
+    drop-shadow(var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color2))
+    drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
+    /* drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color2)) 
+    drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color2))
+    drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color)); */
+  }
+  /* 50% {
+    left: 50%;
+    top: 0;
+  } */
+  50% {
+    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color)) 
+    drop-shadow(var(--stroke-neg) 0 var(--stroke-color2))
+    drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color2))
+    drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color))
+    /* drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color)) 
+    drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color2))
+    drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color2)); */
+  }
+  100% {
+    filter: drop-shadow(var(--stroke-pos) 0 0 var(--stroke-color)) 
+    drop-shadow(var(--stroke-neg) 0 var(--stroke-color2))
+    drop-shadow(0 var(--stroke-pos) 0 var(--stroke-color))
+    drop-shadow(0 var(--stroke-neg) 0 var(--stroke-color2))
+    /* drop-shadow(var(--stroke-pos) var(--stroke-pos) 0 var(--stroke-color2)) 
+    drop-shadow(var(--stroke-pos) var(--stroke-neg) 0 var(--stroke-color))
+    drop-shadow(var(--stroke-neg) var(--stroke-pos) 0 var(--stroke-color2))
+    drop-shadow(var(--stroke-neg) var(--stroke-neg) 0 var(--stroke-color)); */
+  }
+}
+
+/* ROTATE BACKGROUND */
+
+@keyframes bg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1500px 0;
+  }
+}
+.header-bg {
+  border-radius: 15px; /* outerRadius */ 
+  padding: 3px;        /* separation */ 
+  animation: bg 10s infinite linear;
+  
+}

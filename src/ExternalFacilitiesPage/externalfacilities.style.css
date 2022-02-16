@@ -16,9 +16,10 @@
 }
 
 .external-buttons {
-    mask: url(../assets/externalbullets/1.png) center/contain no-repeat;
+    /* mask: url(../assets/externalbullets/1.png) center/contain no-repeat; */
     width: calc(20vh + 10px);
     height: calc(20vh + 10px);
+    color: transparent !important;
 }
 
 .prasmul, .prasmul > img {
@@ -28,15 +29,21 @@
 
 .tophanging-menu {
     position: absolute;
-    top: 0;
-    left: 42.5%;
-    right: 57.5%;
+    top: 2.95%;
+    left: 43.15%;
+}
+
+.main-circle-button {
+    border-radius: 50% !important;
+}
+
+.main-circle {
+    color: transparent;
 }
 
 .tophanging-menu, .tophanging-menu a, .tophanging-menu svg {
-    width: 35vh;
-    height: 35vh;
-    opacity: 0;
+    width: 28.5vh;
+    height: 28.5vh;
 }
 
 .three-int-menus-column {
@@ -44,6 +51,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    row-gap: 1rem;
 }
 
 .three-menus-column {
@@ -51,6 +59,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    row-gap: 1rem;
 }
 
 .two-menus-column {
@@ -58,6 +67,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    row-gap: 1rem;
 }
 
 .bottom-external-menu {
@@ -67,4 +77,56 @@
 
 .external .nav-wrapper {
     height: max-content;
+}
+
+/* EFFECT  */
+
+.click-effect {
+    background: #1C3659;
+    /* transition: transform 1s ease-in-out; */
+}
+
+.click-effect::after, .click-effect::before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #1C3659;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    /* transition: transform 1s ease-in-out; */
+    mask: url(../assets/externalbullets/1.png) center/contain no-repeat;
+}
+
+.click-effect:focus {
+    animation: threedmain 1s ease-in-out;
+    /* transform: translate(-12px, -12px); */
+}
+
+.click-effect:focus::after {
+    /* transform: translate(6px, 6px); */
+    animation: threedafter 1s ease-in-out;
+}
+
+.click-effect:focus::before {
+    /* transform: translate(12px, 12px); */
+    animation: threedbefore 1s ease-in-out;
+}
+
+@keyframes threedmain {
+    50% {
+        transform: translate(-12px, -12px);
+    }
+}
+@keyframes threedafter {
+    50% {
+        transform: translate(6px, 6px);
+    }
+}
+@keyframes threedbefore {
+    50% {
+        transform: translate(12px, 12px);
+    }
 }

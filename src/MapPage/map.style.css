@@ -1,21 +1,81 @@
 .map-menu {
-    display: flex;
-    /* width: 100%; */
-    position: absolute;
-    width: 18.5vw;
-    height: 10vh;
-    border: .15rem solid black;
-    right: 15vw;
-    top: 13vh;
-    border-radius: 10px;
+  display: flex;
+  /* width: 100%; */
+  position: absolute;
+  width: 15.25vw;
+  height: 10vh;
+  /* border: 0.15rem solid black; */
+  right: 17vw;
+  top: 13vh;
+  border-radius: 10px;
+  /* animation: glow 1s infinite alternate; */
 }
 
 .information-link {
-    width: 100% !important;
-    color: white !important;
+  width: 100% !important;
+  color: white !important;
+  /* background-color: white !important; */
+  mask: url(../assets/misc/logomasking.png) center/contain no-repeat;
 }
 
 .information-link-space {
-    width: 50vh !important;
-    height: 30vh !important;
+  width: 50vh !important;
+  height: 30vh !important;
 }
+
+/* 1st opt */
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px -10px white;
+    }
+    to {
+        box-shadow: 0 0 10px 10px white;
+    }
+}
+
+/* 3rd opt */
+.box {
+    background: hsl(0, 0%, 100%);
+    padding: 16px 24px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+}
+  
+.box:after {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.9) translateZ(0);
+    filter: blur(15px);
+    background: linear-gradient(
+    to left,
+    #ff5770,
+    #e4428d,
+    #c42da8,
+    #9e16c3,
+    #6501de,
+    #9e16c3,
+    #c42da8,
+    #e4428d,
+    #ff5770
+    );
+    background-size: 200% 200%;
+    animation: animateGlow 1.25s linear infinite;
+}
+  
+  
+  @keyframes animateGlow {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 200% 50%;
+    }
+  }

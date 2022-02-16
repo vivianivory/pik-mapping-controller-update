@@ -8,7 +8,85 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    column-gap: 10vh;
+}
+
+.cropped-img-border {
+    position: absolute;
+    background: linear-gradient(
+      60deg,
+      #5d00ff,
+      #f2c85b,
+      #fba465,
+      #f2c85b
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: spin 3s linear infinite;
+    height: 49vh !important;
+    width: 100%;
+}
+
+@keyframes spin {
+    from { transform: scale3d(2,2,1) rotateZ(0deg);  }
+    to { transform: scale3d(2,2,1) rotateZ(360deg); }
+}
+  
+
+.border-studio {
+    height: 49vh !important;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    mask: url(../assets/misc/unittype/studiocropped.png) center/contain no-repeat;
+}
+
+.border-2br {
+    height: 49vh !important;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    mask: url(../assets/misc/unittype/2brcropped.png) center/contain no-repeat;
+}
+
+.cropped-img {
+    position: absolute;
+    height: 47.5vh !important;
+    object-fit: contain;
+    z-index: 2;
+}
+
+.video-text {
+    height: 3vh !important;
+    object-fit: contain;
+}
+
+.video-button {
+    height: 20vh;
+}
+
+.video-button img {
+    object-fit: contain;
+}
+
+.studio-video-button-cropped {
+    position: absolute;
+    bottom: 5vh;
+    left: 17.5vw;
+    color: white !important; 
+    mask: url(../assets/misc/unittype/videotext.png) center/contain no-repeat;
+}
+
+.twobr-video-button-cropped {
+    position: absolute;
+    bottom: 5vh;
+    left: 17.5vw;
+    color: white !important;
+    mask: url(../assets/misc/unittype/videotext.png) center/contain no-repeat;
+}
+
+.unittype-gap {
+    height: 10vh;
 }
 
 .unittype-buttons {
@@ -16,12 +94,13 @@
 }
 
 .unittype-video-buttons {
-    transform: translateX(-10vh) translateY(-5vh);
+    transform: translateX(-5vw) translateY(-5vh);
 }
 
 .unittype-links-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 75vh;
 }
 
@@ -36,6 +115,7 @@
 
 .unittype-video-buttons, .unittype-video-buttons img {
     height: 20vh;
+    width: 45vw;
 }
 
 .details-link {

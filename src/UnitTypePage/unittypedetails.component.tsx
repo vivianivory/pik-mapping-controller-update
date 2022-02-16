@@ -1,11 +1,8 @@
 import React, { Component } from "react";
 import { RouteComponentProps, withRouter } from "react-router-dom";
 
-import HomeButton from "../Commons/Components/HomeButton";
-
 import ffstudio from '../assets/pik2fullpage/ffstudio.png';
 import ff2br from '../assets/pik2fullpage/ff2br.png';
-import LeftRightButton from "../Commons/Components/LeftRightButton";
 import NavigationButtons from "../Commons/Components/NavigationButtons/navigationbuttons.component";
 
 interface IPathParams {
@@ -38,9 +35,9 @@ class UnitTypeDetails extends Component<IProps, IState> {
 
     render(): React.ReactNode {
         return (
-            <div className="page-wrapper unittype animate__animated animate__fadeIn">
+            <div className="page-wrapper unittype">
                 <div className="fullpage-image-wrapper unittype">
-                    <img className="fullpage-image" src={this.state.ffdetailsimg} />
+                    <img alt='unit type' className="fullpage-image animate__animated animate__fadeIn" src={this.state.ffdetailsimg} />
                 </div>
                 <div className="page-contents">
                     <NavigationButtons

@@ -43,8 +43,13 @@ class VideoPage extends Component<IProps, IState> {
           <div className='top-menu'
             style={{position:'absolute', zIndex: 5, right: 0}}
           >
-              <div className="topright-menu">
-                  <HomeButton />
+            <div className="topright-menu">
+
+              {this.props.match.params.pageType === 'animation' ? 
+                <HomeButton redirectUrl='/'/>
+              :
+                <HomeButton redirectUrl='/unittype'/>
+              }
               </div>
           </div>
           <div className="video-wrapper">

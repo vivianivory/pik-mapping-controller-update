@@ -1,5 +1,4 @@
 import React, { Component, ReactNode } from "react";
-import { Hexagon } from "@mui/icons-material";
 
 import homepagefullimg from "../assets/pik2fullpage/homepage.png";
 
@@ -30,63 +29,43 @@ class Homepage extends Component<IProps, IState> {
     return (
       <div className="page-wrapper homepage animate__animated animate__fadeIn">
         <div className="fullpage-image-wrapper">
-          <img className="fullpage-image" src={homepagefullimg} />
+          <img alt='homepage' className="fullpage-image" src={homepagefullimg} />
         </div>
         <div className="page-contents homepage-content">
           <div className="homepage-menus-wrapper">
-            {/* <div className='homepage-menus-first-row'>
-              <a href="/map">
-                <Hexagon className="homepage-hexagon map-hexagon" />
-              </a>
-              <a href="/externalfacilities">
-                <Hexagon className="homepage-hexagon external-hexagon" />
-              </a>
-              <a href="/internalfacilities">
-                <Hexagon className="homepage-hexagon internal-hexagon" />
-              </a>
-            </div>
-            <div className='homepage-menus-second-row'>
-              <a href="/information">
-                <Hexagon className="homepage-hexagon information-hexagon" />
-              </a>
-              <Hexagon className="homepage-hexagon blank-hexagon" />
-              <a href="/unittype">
-                <Hexagon className="homepage-hexagon unittype-hexagon" />
-              </a>
-            </div> */}
             <div className="homepage-menus-column first-column">
               <Button className="homepage-buttons" onClick={() => this.loadPage(`/map`)}>
                 <div className="homepage-menu-bullet">
-                  <img src={mapbtn} />
+                  <img alt='map-button' src={mapbtn} />
                 </div>
               </Button>
               <Button className="homepage-buttons" onClick={() => this.loadPage(`/information`)}>
                 <div className="homepage-menu-bullet">
-                  <img src={informationbtn} />
+                  <img alt='information-button' src={informationbtn} />
                 </div>
               </Button>
             </div>
             <div className="homepage-menus-column second-column">
               <Button className="homepage-buttons" onClick={() => this.loadPage(`/externalfacilities`)}>
                 <div className="homepage-menu-bullet">
-                  <img src={externalbtn} />
+                  <img alt='external-button' src={externalbtn} />
                 </div>
               </Button>
               <Button className="homepage-buttons" onClick={() => this.loadPage(`/video/animation`)}>
                 <div className="homepage-menu-bullet">
-                  <img src={animationbtn} />
+                  <img alt='animation-button' src={animationbtn} />
                 </div>
               </Button>
             </div>
             <div className="homepage-menus-column third-column">
               <Button className="homepage-buttons" onClick={() => this.loadPage(`/internalfacilities`)}>
                 <div className="homepage-menu-bullet">
-                  <img src={internalbtn} />
+                  <img alt='internal-button' src={internalbtn} />
                 </div>
               </Button>
               <Button className="homepage-buttons" onClick={() => this.loadPage(`/unittype`)}>
                 <div className="homepage-menu-bullet">
-                  <img src={unittypebtn} />
+                  <img alt='unittype-button' src={unittypebtn} />
                 </div>
               </Button>
             </div>
