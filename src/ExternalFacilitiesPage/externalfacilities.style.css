@@ -29,8 +29,8 @@
 
 .tophanging-menu {
     position: absolute;
-    top: 2.95%;
-    left: 43.15%;
+    top: 7.5vh;
+    left: 43.25vw;
 }
 
 .main-circle-button {
@@ -42,12 +42,12 @@
 }
 
 .tophanging-menu, .tophanging-menu a, .tophanging-menu svg {
-    width: 28.5vh;
-    height: 28.5vh;
+    width: 25.75vh;
+    height: 25.75vh;
 }
 
 .three-int-menus-column {
-    margin-top: -8.5vh;
+    margin-top: -0.5vh;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -55,7 +55,7 @@
 }
 
 .three-menus-column {
-    margin-top: 1vh;
+    margin-top: 7.5vh;
     display: flex;
     flex-direction: column;
     height: 100%;

@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-bottom: 1rem;
+    padding-bottom: 7.5vh;
     column-gap: .5rem;
 }
 
@@ -15,8 +15,8 @@
 }
 
 .nav-wrapper img, .nav-wrapper a, .nav-wrapper .ripple {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
     display: flex;
 }
 

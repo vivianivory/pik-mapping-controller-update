@@ -34,7 +34,7 @@
   
 
 .border-studio {
-    height: 49vh !important;
+    height: 43vh !important;
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -42,7 +42,7 @@
 }
 
 .border-2br {
-    height: 49vh !important;
+    height: 43vh !important;
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -51,7 +51,7 @@
 
 .cropped-img {
     position: absolute;
-    height: 47.5vh !important;
+    height: 40vh !important;
     object-fit: contain;
     z-index: 2;
 }
@@ -69,19 +69,11 @@
     object-fit: contain;
 }
 
-.studio-video-button-cropped {
+.studio-video-button-cropped, .twobr-video-button-cropped {
     position: absolute;
-    bottom: 5vh;
+    bottom: 8.5vh;
     left: 17.5vw;
     color: white !important; 
-    mask: url(../assets/misc/unittype/videotext.png) center/contain no-repeat;
-}
-
-.twobr-video-button-cropped {
-    position: absolute;
-    bottom: 5vh;
-    left: 17.5vw;
-    color: white !important;
     mask: url(../assets/misc/unittype/videotext.png) center/contain no-repeat;
 }
 
@@ -94,14 +86,14 @@
 }
 
 .unittype-video-buttons {
-    transform: translateX(-5vw) translateY(-5vh);
+    transform: translateX(-5vw) translateY(-3vh);
 }
 
 .unittype-links-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 75vh;
+    height: 60vh;
 }
 
 .unittype-links-wrapper button {
@@ -110,11 +102,11 @@
 }
 
 .main-buttons, .main-buttons img {
-    height: 60vh;
+    height: 50vh;
 }
 
 .unittype-video-buttons, .unittype-video-buttons img {
-    height: 20vh;
+    height: 15.5vh;
     width: 45vw;
 }
 

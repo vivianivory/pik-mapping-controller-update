@@ -9,6 +9,9 @@ a, a:hover {
 }
 
 .homebtn-icon {
+  position: absolute;
+  top: 7.5vh;
+  right: 3vw;
   width: 7.5vh;
   height: 7.5vh;
   opacity: 0.95;
@@ -59,7 +62,7 @@ a, a:hover {
 .fullpage-image {
   width: 100vw;
   height: 100vh;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .page-contents {
@@ -79,6 +82,10 @@ a, a:hover {
   display: flex;
   justify-content: space-between;
   margin: 1rem;
+}
+
+.top-menu {
+  margin-right: 3rem;
 }
 
 .topright-menu {
