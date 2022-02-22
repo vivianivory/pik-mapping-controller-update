@@ -29,7 +29,7 @@
 
 .tophanging-menu {
     position: absolute;
-    top: 3.25vh;
+    top: 4.75vh;
     left: 43.5vw;
 }
 
@@ -42,8 +42,8 @@
 }
 
 .tophanging-menu, .tophanging-menu a, .tophanging-menu svg {
-    width: 28.25vh;
-    height: 28.25vh;
+    width: 27.75vh;
+    height: 27.75vh;
 }
 
 .three-int-menus-column {

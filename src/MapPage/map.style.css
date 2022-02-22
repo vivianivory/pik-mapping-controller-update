@@ -1,11 +1,11 @@
 .map-menu {
-  display: flex;
-  position: absolute;
-  width: 15.25vw;
-  height: 10vh;
-  right: 18.5vw;
-  top: 13.25vh;
   border-radius: 10px;
+    display: flex;
+    height: 10vh;
+    position: absolute;
+    right: 19vw;
+    top: 14.75vh;
+    width: 14.25vw;
 }
 
 .information-link {
