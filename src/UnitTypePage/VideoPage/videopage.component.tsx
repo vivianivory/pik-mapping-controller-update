@@ -53,7 +53,7 @@ class VideoPage extends Component<IProps, IState> {
               </div>
           </div>
           <div className="video-wrapper">
-            <video width="100%" height="100%" controls autoPlay >
+            <video width="90%" height="100%" controls autoPlay >
                   <source src={this.state.pageTypeVideo} type="video/mp4"/>
             </video>
           </div>

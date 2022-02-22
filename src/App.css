@@ -1,5 +1,5 @@
 html, body, div#root {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   overflow: hidden;
 }
@@ -11,7 +11,7 @@ a, a:hover {
 .homebtn-icon {
   position: absolute;
   top: 7.5vh;
-  right: 3vw;
+  right: 10vw;
   width: 7.5vh;
   height: 7.5vh;
   opacity: 0.95;
@@ -56,11 +56,14 @@ a, a:hover {
   left: 0;
   right: 0;
   object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: -1;
 }
 
 .fullpage-image {
-  width: 100vw;
+  width: 95vw;
   height: 100vh;
   object-fit: contain;
 }
