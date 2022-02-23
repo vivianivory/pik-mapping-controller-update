@@ -139,6 +139,11 @@
     justify-content: center;
 }
 
+.videopage-navigation {
+    position: absolute;
+    bottom: 0;
+}
+
 .bottom-smarthome-menu {
     margin: 0;
 }

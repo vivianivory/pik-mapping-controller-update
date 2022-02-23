@@ -1,11 +1,11 @@
 .map-menu {
   border-radius: 10px;
-    display: flex;
-    height: 10vh;
-    position: absolute;
-    right: 19vw;
-    top: 14.75vh;
-    width: 14.25vw;
+  display: flex;
+  height: 10vh;
+  position: absolute;
+  right: 17.5vw;
+  top: 13.25vh;
+  width: 15vw;
 }
 
 .information-link {
@@ -23,35 +23,35 @@
 /* 1st opt */
 
 @keyframes glow {
-    from {
-        box-shadow: 0 0 10px -10px white;
-    }
-    to {
-        box-shadow: 0 0 10px 10px white;
-    }
+  from {
+    box-shadow: 0 0 10px -10px white;
+  }
+  to {
+    box-shadow: 0 0 10px 10px white;
+  }
 }
 
 /* 3rd opt */
 .box {
-    background: hsl(0, 0%, 100%);
-    padding: 16px 24px;
-    position: relative;
-    border-radius: 8px;
-    box-shadow: 0 0 0 1px rgba(0,0,0,.01);
+  background: hsl(0, 0%, 100%);
+  padding: 16px 24px;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
 }
-  
+
 .box:after {
-    position: absolute;
-    content: "";
-    top: 15px;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    transform: scale(0.9) translateZ(0);
-    filter: blur(15px);
-    background: linear-gradient(
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.9) translateZ(0);
+  filter: blur(15px);
+  background: linear-gradient(
     to left,
     #ff5770,
     #e4428d,
@@ -62,17 +62,16 @@
     #c42da8,
     #e4428d,
     #ff5770
-    );
-    background-size: 200% 200%;
-    animation: animateGlow 1.25s linear infinite;
+  );
+  background-size: 200% 200%;
+  animation: animateGlow 1.25s linear infinite;
 }
-  
-  
-  @keyframes animateGlow {
-    0% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 200% 50%;
-    }
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
   }
+  100% {
+    background-position: 200% 50%;
+  }
+}
