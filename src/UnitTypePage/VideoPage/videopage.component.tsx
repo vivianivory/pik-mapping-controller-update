@@ -6,6 +6,8 @@ import studiovideo from "../../assets/videos/studio.mp4";
 import twobrvideo from "../../assets/videos/twobr.mp4";
 
 import animationvideo from "../../assets/videos/animation.mp4";
+import progressvideo from "../../assets/videos/progress.mp4";
+
 import NavigationButtons from "../../Commons/Components/NavigationButtons/navigationbuttons.component";
 
 interface IPathParams {
@@ -33,6 +35,8 @@ class VideoPage extends Component<IProps, IState> {
       this.setState({ pageTypeVideo: twobrvideo });
     } else if (this.props.match.params.pageType === "animation") {
       this.setState({ pageTypeVideo: animationvideo });
+    } else if (this.props.match.params.pageType === "progress") {
+      this.setState({ pageTypeVideo: progressvideo });
     }
   }
 
@@ -58,7 +62,11 @@ class VideoPage extends Component<IProps, IState> {
             </video>
           </div>
           <div className="videopage-navigation">
-            <NavigationButtons disableLeftButton disableExitButton disableRightButton />
+            <NavigationButtons
+              disableLeftButton
+              disableExitButton
+              disableRightButton
+            />
           </div>
         </div>
       </div>
