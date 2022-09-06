@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { RouteComponentProps, withRouter } from "react-router-dom";
-import HomeButton from "../../Commons/Components/HomeButton";
+// import HomeButton from "../../Commons/Components/HomeButton";
 
 import studiovideo from "../../assets/videos/studio.mp4";
 import twobrvideo from "../../assets/videos/twobr.mp4";
 
-import animationvideo from "../../assets/videos/animation.mp4";
+// import animationvideo from "../../assets/videos/animation.mp4";
+import progressvideo from "../../assets/videos/progress.mp4";
+
 import NavigationButtons from "../../Commons/Components/NavigationButtons/navigationbuttons.component";
 
 interface IPathParams {
@@ -31,9 +33,12 @@ class VideoPage extends Component<IProps, IState> {
       this.setState({ pageTypeVideo: studiovideo });
     } else if (this.props.match.params.pageType === "2br") {
       this.setState({ pageTypeVideo: twobrvideo });
-    } else if (this.props.match.params.pageType === "animation") {
-      this.setState({ pageTypeVideo: animationvideo });
+    } else if (this.props.match.params.pageType === "progress") {
+      this.setState({ pageTypeVideo: progressvideo });
     }
+    // else if (this.props.match.params.pageType === "animation") {
+    //   this.setState({ pageTypeVideo: animationvideo });
+    // }
   }
 
   render() {
@@ -58,7 +63,11 @@ class VideoPage extends Component<IProps, IState> {
             </video>
           </div>
           <div className="videopage-navigation">
-            <NavigationButtons disableLeftButton disableExitButton disableRightButton />
+            <NavigationButtons
+              disableLeftButton
+              disableExitButton
+              disableRightButton
+            />
           </div>
         </div>
       </div>

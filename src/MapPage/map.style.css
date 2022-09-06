@@ -3,15 +3,14 @@
   display: flex;
   height: 10vh;
   position: absolute;
-  right: 17.5vw;
-  top: 13.25vh;
+  right: 7.75vw;
+  top: 14.25vh;
   width: 15vw;
 }
 
 .information-link {
   width: 100% !important;
   color: white !important;
-  /* background-color: white !important; */
   mask: url(../assets/misc/logomasking.png) center/contain no-repeat;
 }
 
