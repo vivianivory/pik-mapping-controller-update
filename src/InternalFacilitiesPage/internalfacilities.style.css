@@ -10,13 +10,12 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    row-gap: 1vh;
+    justify-content: flex-end;
 }
 
 .internal-link {
     /* opacity: 0; */
-    height: 10vh;
+    height: 30vh;
     width: 100%;
 }
 
